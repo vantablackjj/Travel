@@ -1,0 +1,189 @@
+.sidebar {
+    width: 260px;
+    background-color: var(--white);
+    min-height: calc(100vh - var(--default-layout-header-height));
+    border-right: 1px solid #e5e7eb;
+    position: sticky;
+    top: var(--default-layout-header-height);
+    overflow-y: auto;
+
+    .inner {
+        padding: 24px;
+    }
+
+    .mainNav {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        .navItem {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px 16px;
+            border-radius: 8px;
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: 500;
+            transition: all 0.3s;
+            cursor: pointer;
+
+            svg {
+                width: 20px;
+                height: 20px;
+                flex-shrink: 0;
+            }
+
+            &:hover {
+                background-color: #f3f4f6;
+            }
+
+            &.active {
+                background-color: #dbeafe;
+                color: #2563eb;
+            }
+        }
+    }
+
+    .divider {
+        margin: 24px 0;
+        border-top: 1px solid #e5e7eb;
+    }
+
+    .quickLinks {
+        .title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #6b7280;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 12px;
+            padding: 0 16px;
+        }
+
+        .linksList {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+
+            .linkItem {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                padding: 8px 16px;
+                border-radius: 8px;
+                text-decoration: none;
+                color: var(--text-color);
+                font-weight: 500;
+                font-size: 1.4rem;
+                transition: background-color 0.3s;
+                cursor: pointer;
+                background: transparent;
+                width: 100%;
+                text-align: left;
+
+                svg {
+                    width: 20px;
+                    height: 20px;
+                }
+
+                &:hover {
+                    background-color: #f3f4f6;
+                }
+            }
+        }
+    }
+
+    .promoCard {
+        background: linear-gradient(135deg, #3b82f6 0%, #9333ea 100%);
+        border-radius: 12px;
+        padding: 16px;
+        color: var(--white);
+
+        h3 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        p {
+            font-size: 1.4rem;
+            margin-bottom: 12px;
+            opacity: 0.9;
+        }
+
+        button {
+            background-color: var(--white);
+            color: #2563eb;
+            width: 100%;
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-size: 1.4rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s;
+
+            &:hover {
+                background-color: #f3f4f6;
+            }
+        }
+    }
+
+    .popularDestinations {
+        margin-top: 24px;
+
+        .title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #6b7280;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 12px;
+            padding: 0 16px;
+        }
+
+        .destinationsList {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+
+            .destinationItem {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 8px 16px;
+                border-radius: 8px;
+                text-decoration: none;
+                color: var(--text-color);
+                transition: background-color 0.3s;
+
+                &:hover {
+                    background-color: #f3f4f6;
+                }
+
+                span {
+                    font-size: 1.4rem;
+                }
+
+                .arrow {
+                    font-size: 1.2rem;
+                    color: #9ca3af;
+                }
+            }
+        }
+    }
+}
+
+// Scrollbar styling for sidebar
+.sidebar::-webkit-scrollbar {
+    width: 6px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+    background-color: transparent;
+}

@@ -23,7 +23,7 @@ function App() {
                             key={index}
                             path={route.path}
                             element={
-                                <Layout>
+                                <Layout className="w-full h-screen">
                                     <Page />
                                 </Layout>
                             }

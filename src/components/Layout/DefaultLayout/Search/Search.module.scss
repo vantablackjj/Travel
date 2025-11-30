@@ -1,0 +1,33 @@
+
+    .search {
+        display: none;
+
+        @media (min-width: 1024px) {
+            display: flex;
+            align-items: center;
+            background-color: #c6d3ec;
+            border-radius: 24px;
+            padding: 8px 16px;
+            width: 256px;
+        }
+
+        svg {
+            width: 20px;
+            height: 20px;
+            color: #6b7280;
+        }
+
+        input {
+            background: transparent;
+            border: none;
+            outline: none;
+            margin-left: 8px;
+            width: 100%;
+            font-size: 1.4rem;
+            color: var(--text-color);
+
+            &::placeholder {
+                color: #9ca3af;
+            }
+        }
+    }
