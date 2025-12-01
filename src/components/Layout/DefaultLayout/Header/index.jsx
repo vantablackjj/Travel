@@ -105,7 +105,7 @@ function Header() {
                         <a href="/">Home</a>
                         <a href="/destinations">Destinations</a>
                         <a href="/tours">Tours</a>
-                        <a href="/hotels">Hotels</a>
+
                         <a href="/flights">Flights</a>
                         <a href="/blog">Blog</a>
                         <button>Sign In</button>
